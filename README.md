@@ -43,8 +43,13 @@ The pre-processing of the data included the following steps:
     - Check for data arrangement and how they are present as all necessary columns are provided.
     - In this case as given below:-
         - Provided Dataset:-
+
+          ![](Images/image01.png)
+          ![](Images/image03.png)
         - Corrected Dataset:-
-3. Step 3: Model Predictions - SVD Model (Surprise Package).
+
+          ![](Images/image02.png)
+3. Step 3: Model Predictions using SVD Model from (Surprise Package).
 
 ---
 
@@ -71,6 +76,11 @@ For traning we will be using Surprise Package SVD model.
 ### Predictions and Conclusion
  - We will be predicting the recommended movies for  particular user (here used user id is 712664)
  - Recommended movies are shown in ascending as per highest estimate score shown below:-
+
+   ![](Images/image04.png)
+ - **Result**
+   
+      ![](Images/image05.png)
    
  - So we can conclude that the this SVD model works properly on large datasets.
  - We can use this model in OTT platforms and Streaming Services which helps Entertainment industry. Organizations like Netflix, Amazon etc. In analysing user activity pattern's and suggest products that better suit the user needs and choices.
