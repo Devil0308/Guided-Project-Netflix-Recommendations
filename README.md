@@ -26,6 +26,10 @@ are best suited for them.
     - *Customers Id*:- Columns contains customer Ids
     - *Movies Id*:- Have Ids of the corresponding movies.
     - *Ratings*:- Contains ratings of movies given by particular individuals.
+- There are another dataset contaning movies titles for the particular movie Id.
+    - *Movies Id*:- Have Ids of the corresponding movies.
+    - *Year*:- The year of movies release.
+    - *Name*:- Name of the movie.
  
 --- 
 
@@ -35,14 +39,33 @@ The pre-processing of the data included the following steps:
 1. Step 1: Load Data
 2. Step 2: Perform ***Exploratory Data Analysis***
     - Confirm number of records in the data and how they are distributed
-    - Check data types
     - Check for missing data, invalid entries, duplicates
     - Check for data arrangement and how they are present as all necessary columns are provided.
     - In this case as given below:-
-        - Provided Dataset:- 
-3. Step 3: See relations between independent and dependent variables and make inferences.
-4. Step 4: Model Predictions, two approaches:
-    - Linear Regression Models.
-    - Time Series Model (ARIMA, SARIMAX).
-5. Step 5: Forecast
-6. Step 6: Compare result from different models
+        - Provided Dataset:-
+        - Corrected Dataset:-
+3. Step 3: Model Predictions - SVD Model (Surprise Package).
+
+---
+
+## Model Training and Predictions
+### Logic:
+  - Before training some of the work needs to be done in the correected dataset given below:-
+      - Step 1: Remove all the users that have rated less movies and also all those movies that has been rated less in numbers.
+      - Step 2: Now store all the movie_id indexes in a variable dataset_movie_summary.index and convert the datatype to int
+      - Step 3: Create a benchmark.
+      - Step 4: Remove all the users that are in-active
+      - Step 5: Remove all the customers and movies that are below the benchmark.
+      - Step 6: Prepare the dataset for SVD and it takes the matrix as the input so for input, we will convert the dataset into sparse matrix.
+      - Step 7: Now Train the model
+
+### Training:
+For traning we will be using Surprise Package SVD model.
+- **SVD (Singular Value Decomposition)**:
+   - A factorization technique that decomposes a matrix (think of a table with rows and columns) into three smaller matrices.
+   - These matrices reveal underlying patterns and relationships within the data.
+   - SVD is computationally efficient and scalable for large datasets.
+   - It can handle sparse data (many missing values) common in recommender systems.
+- **Model Evaluation**:
+   - 
+  
