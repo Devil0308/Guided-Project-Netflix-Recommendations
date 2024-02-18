@@ -67,5 +67,13 @@ For traning we will be using Surprise Package SVD model.
    - SVD is computationally efficient and scalable for large datasets.
    - It can handle sparse data (many missing values) common in recommender systems.
 - **Model Evaluation**:
-   - 
+
+### Predictions and Conclusion
+ - We will be predicting the recommended movies for  particular user (here used user id is 712664)
+ - Recommended movies are shown in ascending as per highest estimate score shown below:-
+   
+ - So we can conclude that the this SVD model works properly on large datasets.
+ - We can use this model in OTT platforms and Streaming Services which helps Entertainment industry. Organizations like Netflix, Amazon etc. In analysing user activity pattern's and suggest products that better suit the user needs and choices.
+---
+
   
