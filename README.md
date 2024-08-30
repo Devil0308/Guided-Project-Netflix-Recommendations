@@ -71,7 +71,7 @@ For traning we will be using Surprise Package SVD model.
    - These matrices reveal underlying patterns and relationships within the data.
    - SVD is computationally efficient and scalable for large datasets.
    - It can handle sparse data (many missing values) common in recommender systems.
-- **Model Evaluation**:
+  
 
 ### Predictions and Conclusion
  - We will be predicting the recommended movies for  particular user (here used user id is 712664)
